@@ -201,6 +201,10 @@ footer h3 {
 }
 
 @media (max-width: 720px) {
+   .footer__container {
+      gap: 40px;
+   }
+
    .about button {
       width: 100%;
    }
