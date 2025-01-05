@@ -201,6 +201,15 @@ footer h3 {
 }
 
 @media (max-width: 720px) {
+   .about button {
+      width: 100%;
+   }
+
+   .about {
+      gap: 30px;
+      flex-direction: column;
+   }
+
    header, .about, .form, footer {
       padding-left: 10px;
       padding-right: 10px;
