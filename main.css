@@ -1,3 +1,10 @@
+@keyframes rotation {
+   to { transform: rotate(360deg); }
+}
+
+
+
+
 body {
    font-family: 'Raleway', sans-serif;
    color: #213053;
@@ -8,6 +15,10 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   position: sticky;
+   background-color: #fff;
+   top: 0;
+   z-index: 1;
 }
 
 .header__logo {
@@ -61,7 +72,9 @@ input {
 
 .about__sun-image {
    width: 100px;
-   height: 100px;  
+   height: 100px;
+   animation: rotation 10s linear infinite;
+   position: absolute;
 }
 
 .about {
@@ -185,4 +198,54 @@ footer h3 {
 
 .footer__links a {
    margin-bottom: 15px;
+}
+
+@media (max-width: 720px) {
+   header, .about, .form, footer {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .header__logo {
+      height: 20px;
+   }
+
+   .about, .form{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .about h1, .form h1 {
+      font-size: 36px;
+      line-height: 40px;
+   }
+
+   .about__image {
+      width: 280px;
+   }
+
+   .about__sun-image {
+      height: 75px;
+      width: 75px;
+   }
+}
+
+@media (max-width: 1024px) {
+   header, .about, .form, footer {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .about h1 {
+      font-size: 36px;
+      line-height: 40px;
+   }
+   
+   .about__image {
+      width: 280px;
+   }
+
+   .about__sun-image {
+      height: 75px;
+      width: 75px;
+   }
 }
