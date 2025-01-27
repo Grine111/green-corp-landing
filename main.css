@@ -416,36 +416,6 @@ footer h3 {
       font-size: 36px;
    }
 
-
-
-   .features__box {
-      flex-direction: column;
-   }
-
-   .features__savings-box {
-      max-width: 100%;
-   }
-
-   .features__rate-box {
-      max-width: 100%;
-   }
-
-   .features__box h3{
-      font-size: 36px;
-   }
-
-   .first-card {
-      grid-column: 1/4;
-   }
-
-   .second-card {
-      grid-column: 1/4;
-   }
-
-   .third-card {
-      grid-column: 1/4;
-   }
-
    .promo_image {
       height: 500px;
       width: 100%;
@@ -479,5 +449,36 @@ footer h3 {
    .about__sun-image {
       height: 75px;
       width: 75px;
+   }
+
+   
+
+
+   .features__box {
+      flex-direction: column;
+   }
+
+   .features__savings-box {
+      max-width: 100%;
+   }
+
+   .features__rate-box {
+      max-width: 100%;
+   }
+
+   .features__box h3{
+      font-size: 36px;
+   }
+
+   .first-card {
+      grid-column: 1/4;
+   }
+
+   .second-card {
+      grid-column: 1/4;
+   }
+
+   .third-card {
+      grid-column: 1/4;
    }
 }
